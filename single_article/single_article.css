@@ -1,0 +1,568 @@
+*{
+  margin :0;
+ 
+}
+body {
+    background-color: #1f1f1f;
+    margin: 0;
+    
+ }
+ nav {
+  background-color:#14141444;
+  height: 60px;
+  margin-bottom: 130px;
+  width: 100%;
+  display: flex;
+  
+}
+
+
+h1 {
+  color: #AAEF71;
+  font-size: 20px;
+  padding-top: 16px;
+  padding-left: 50px;
+  margin: 0;
+  font-family: 'Paytone One', sans-serif;
+}
+a:visited{
+   color: #14141444;
+}
+
+
+ .imagejeu { 
+   height:730px ;
+   width: 555px;
+   z-index: 1; 
+   border-top-left-radius: 2%;
+   border-bottom-left-radius: 2%;
+ }
+
+ .card {
+  background-color: #141414;
+  height: 730px;
+  width: 1500px;
+  margin: auto;
+  border-radius: 2%;
+  display:flex;
+  justify-content:flex-start;
+  text-align: center;
+  margin-bottom: 130px;
+  }
+ .texte {
+   width: 100%;
+ }
+ .titre {
+  color: #AAEF71;
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 35px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+ }
+ .intro {
+  color: #AAEF71;
+  width: 879px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  margin: auto;
+ }
+ video {
+  width: 640px;
+  height: 350px;
+  
+ }
+ .stock {
+  color: #AAEF71;
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  padding-bottom: 20px ;
+ }
+ .prix {
+  color: #AAEF71;
+  padding-right: 10px;
+ 
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+  padding-bottom: 20px ;
+ }
+
+
+ .fa-check {
+  color:#00FF00;
+ }
+.fa-circle-xmark {
+  
+  color:red;
+ }
+ .fa-steam {
+  font-size: 30px;
+  letter-spacing: 5px;
+ }
+
+ .bienvenue {
+  color: #AAEF71; 
+  font-size: 18px;
+  font-family: 'Paytone One', sans-serif;
+  padding-top:19px;
+  margin-left: auto;
+  margin-right: 10px;
+}
+.fa-user-check {
+  margin-left: 10px;
+}
+
+/* **********************************************************************BUTTON********************************************************************************* */
+
+ .achat {
+ display: inline-block;
+ padding: 12px 24px;
+ background-color: #141414;
+ border: 1px solid #4f4f4f;
+ border-radius: 4px;
+ transition: all 0.2s ease-in;
+ position: relative;
+ overflow: hidden;
+ font-size: 19px;
+ color:white;
+ z-index: 1;
+}
+
+.achat:before {
+ content: "";
+ position: absolute;
+ left: 50%;
+ transform: translateX(-50%) scaleY(1) scaleX(1.25);
+ top: 100%;
+ width: 140%;
+ height: 180%;
+ background-color: rgba(0, 0, 0, 0.05);
+ border-radius: 50%;
+ display: block;
+ transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+ z-index: -1;
+}
+
+.achat:after {
+ content: "";
+ position: absolute;
+ left: 55%;
+ transform: translateX(-50%) scaleY(1) scaleX(1.45);
+ top: 180%;
+ width: 160%;
+ height: 190%;
+ background-color: #AAEF71;
+ border-radius: 50%;
+ display: block;
+ transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+ z-index: -1;
+}
+
+.achat:hover {
+ color:#AAEF71;
+ border: 1px solid #AAEF71;
+}
+
+.achat:hover:before {
+ top: -35%;
+ background-color:#AAEF71;
+ transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.achat:hover:after {
+ top: -45%;
+ background-color:#1f1f1f ;
+ transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+
+/* **********************************************************************BUTTON CONNEXION********************************************************************************* */
+
+.connexion {
+  appearance: none;
+  background-color: #1f1f1f;
+  border: 0.125em solid #AAEF71;
+ 
+  border-radius: 0.9375em;
+  box-sizing: border-box;
+  color: #AAEF71;
+  cursor: pointer;
+  
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 4px;
+ 
+  min-height: 3.75em;
+  min-width: 0;
+ 
+  padding: 1em 2.3em;
+  text-align: center;
+  text-decoration: none;
+ }
+ 
+ .connexion:disabled {
+  pointer-events: none;
+ }
+ 
+ .connexion:hover {
+  color: #1f1f1f;
+  background-color: #AAEF71;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+ 
+ }
+ 
+ .connexion:active {
+  box-shadow: none;
+  transform: translateY(0);
+ }
+ 
+ .fa-user {
+    margin-left: -7px;
+ }
+
+ /* **********************************************************************BUTTON DECONNEXION********************************************************************************* */
+
+.deconnexion {
+  appearance: none;
+  background-color: #1f1f1f;
+  border: 0.125em solid #AAEF71;
+ 
+  border-radius: 0.9375em;
+  box-sizing: border-box;
+  color: #AAEF71;
+  cursor: pointer;
+  
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 4px;
+ 
+  margin-right: 20px;
+  min-height: 3.75em;
+  min-width: 0;
+ 
+  padding: 1em 2.3em;
+  text-align: center;
+  text-decoration: none;
+ }
+ 
+ .deconnexion:disabled {
+  pointer-events: none;
+ }
+ 
+ .deconnexion:hover {
+  color: #1f1f1f;
+  background-color: #AAEF71;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+ 
+ }
+ 
+ .deconnexion:active {
+  box-shadow: none;
+  transform: translateY(0);
+ }
+ 
+ .fa-circle-minus {
+    margin-left: -7px;
+    padding-right: 5px;
+ }
+ 
+ 
+ /* **********************************************************************BUTTON INSCRIPTION********************************************************************************* */
+ 
+ .inscription {
+  appearance: none;
+  background-color: #1f1f1f;
+  border: 0.125em solid #AAEF71;
+  
+  border-radius: 0.9375em;
+  box-sizing: border-box;
+  color: #AAEF71;
+  cursor: pointer;
+ margin-left: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 4px;
+  position: absolute;
+  min-height: 3.75em;
+  min-width: 0;
+ 
+  padding: 1em 2.3em;
+  text-align: center;
+  text-decoration: none;
+ }
+ 
+ .inscription:disabled {
+  pointer-events: none;
+ }
+ 
+ .inscription:hover {
+  color: #1f1f1f;
+  background-color: #AAEF71;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+ 
+ }
+ 
+ .inscription:active {
+  box-shadow: none;
+  transform: translateY(0);
+ }
+ 
+ .fa-scroll{
+     margin-left: -7px; 
+ }
+ 
+ .allbutton {
+  margin-left: auto;
+  margin-right: 200px;
+ }
+ 
+
+
+/***********************************************************************IMAGE RANDOM ***************************************************************/
+
+.contenueimage{
+  display:         flex;
+  flex-wrap:       wrap;
+  justify-content: center;
+  
+  }
+  .imagerandom {
+    width: 350px;
+    height: 200px;
+    z-index: 1;  
+  }
+  .titreimagerandom{
+    color: #AAEF71;
+    font-size: 20pxx;
+  }
+  .prix2{
+    color: #AAEF71;
+    margin-left: auto;
+    font-size: 20px;
+  }
+  .contenueimagechild{
+    height: 250px;
+    width: 350px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+    }
+    .info{
+      display: flex;
+      width: 350px;
+      margin-top: 5px;
+      font-family: 'Roboto', sans-serif;
+    }
+    .promo {
+      background-color: #1f1f1f;
+      width: 40px;
+      height: 25px;
+      margin-left: 305px;
+      margin-top: 6px;
+      border-radius: 25%;
+      position: absolute;
+      z-index: 2;
+   }
+   .pourcent {
+    font-size: 14px;
+    color: #AAEF71;
+    margin: auto;
+    margin-left: 7px;
+    margin-top: 4px;
+    font-family: 'Roboto', sans-serif;
+ }
+
+
+
+/***************************************************************** RESPONSIVE CARD ****************************************************************/
+@media only screen and (max-width: 1448px) {
+ 
+  .intro {
+    color: #AAEF71;
+    width: 679px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    margin: auto;
+   }
+
+   .texte {
+   
+    margin: auto;
+    
+  }
+  .card {
+    background-color: #141414;
+    height: 730px;
+    width: 100%;
+    margin: auto;
+    border-radius: 2%;
+    display:flex;
+    justify-content:flex-start;
+    text-align: center;
+    margin-bottom: 130px;
+    
+    }
+   
+
+}
+@media only screen and (max-width: 1393px) {
+ 
+
+  .texte {
+   
+    margin: auto;
+    
+  }
+  .card {
+    background-color: #141414;
+    height: 730px;
+    width: 100%;
+    margin: auto;
+    border-radius: 2%;
+    display:flex;
+    justify-content:flex-start;
+    text-align: center;
+    margin-bottom: 130px;
+    
+    }
+
+
+}
+@media only screen and (max-width: 1331px) {
+ 
+
+   .texte {
+   
+    margin: auto;
+    
+  }
+
+  .imagejeu { 
+    height:730px ;
+    width: 555px;
+    z-index: 1; 
+    display: none;
+    border-top-left-radius: 2%;
+    border-bottom-left-radius: 2%;
+  }
+
+  .card {
+    background-color: #141414;
+    height: 730px;
+    width: 100%;
+    margin: auto;
+    border-radius: 2%;
+    display:flex;
+    justify-content:flex-start;
+    text-align: center;
+    margin-bottom: 130px;
+    
+    }
+  
+}
+@media only screen and (max-width: 676px) {
+ 
+  video {
+    width: 479px;
+    height: 350px;
+    
+   }
+   .texte {
+   
+    margin: auto;
+    
+  }
+  .intro {
+    color: #AAEF71;
+    width: 479px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    margin: auto;
+   }
+   .fa-bars{
+    color: #AAEF71;
+    position: absolute;
+    margin-top: 11px;
+    margin-left: 110px;
+    font-size: 30px;
+    
+  }
+  .allbutton {
+    margin-left: auto;
+    margin-right: 148px;
+    height: 500px;
+    width: 0px;
+   }
+   .connexion {
+
+    margin-top: 54px;
+    display: none;
+    
+   }
+   .connexion.visible {
+
+    margin-top: 54px;
+    display: block;
+    
+   }
+   .inscription{
+    margin-left: -1px;
+    display: none;
+   }
+   .inscription.visible{
+    margin-left: -1px;
+    display: block;
+   }
+  
+   .fa-scroll{
+    margin-left: -7px;
+    display: block;
+}
+   
+
+}
+@media only screen and (max-width: 507px) {
+ 
+  video {
+    width: 90%;
+    height: 90%;
+    
+   }
+   .texte {
+   
+    margin: auto;
+    
+  }
+  .intro {
+    color: #AAEF71;
+    width: 279px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    margin: auto;
+   }
+   .bienvenue {
+    display: none;
+   }
+
+   .deconnexion {
+    margin-left: auto;
+   }
+
+
+
+
+}

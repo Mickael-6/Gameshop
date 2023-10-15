@@ -1,0 +1,598 @@
+@font-face {
+   font-family: pricedown bl;
+   src: url("fonts/pricedown\ bl.otf") format("opentype");
+}
+
+@font-face {
+   font-family: high;
+   src: url("fonts/high-mount.personal-use.otf") format("opentype");
+}
+
+
+body {
+   background-color: #1f1f1f;
+   margin: 0;
+   position: relative;
+   height: 100vh;
+}
+
+.banniere {
+   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.692), rgba(23, 22, 24, 0.52)),
+      url("assets/exclusivites-ps4-pas-sur-PC.jpg");
+   background-repeat: no-repeat;
+   background-position: center 20%;
+   object-fit: cover;
+   height: 400px;
+   width: 100%;
+   z-index: 2;
+   margin-bottom: 30px;
+
+}
+
+a {
+   text-decoration: none;
+   color: #AAEF71;
+}
+
+nav {
+   background-color: #14141444;
+   height: 60px;
+   position: fixed;
+   width: 100%;
+   z-index: 3;
+   display: flex;
+   
+}
+
+
+
+h1 {
+   color: #AAEF71;
+   font-size: 20px;
+   padding-top: 16px;
+   padding-left: 50px;
+   
+   margin: 0;
+   
+   font-family: 'Paytone One', sans-serif;
+}
+
+h2 {
+   color: #AAEF71;
+   text-shadow: 4px 0px #60d394;
+   font-size: 85px;
+   text-align: center;
+   font-family: 'Paytone One', sans-serif;
+   letter-spacing: 2px;
+   margin: 0;
+   padding-top: 100px;
+}
+
+.soustitre {
+   color: #AAEF71;
+   font-size: 20px;
+   text-align: center;
+   font-family: 'Roboto', sans-serif;
+   margin: 0;
+}
+
+img {
+   width: 405px;
+   height: 251px;
+   z-index: 1;
+   border-radius: 5%;
+   position: absolute;
+}
+
+.allcard {
+   padding-top: 30px;
+
+   margin: auto;
+}
+
+.cardparent {
+   display: inline-block;
+   margin-right: 14px;
+   margin-left: 14px;
+
+
+
+}
+
+.card {
+   width: 405px;
+   height: 251px;
+
+}
+
+.promo {
+   background-color: #1f1f1f;
+   width: 40px;
+   height: 25px;
+   margin-left: 355px;
+   margin-top: 10px;
+   border-radius: 25%;
+   position: absolute;
+   z-index: 2;
+}
+
+.pourcent {
+   font-size: 14px;
+   color: #AAEF71;
+   margin: auto;
+   margin-left: 7px;
+   margin-top: 4px;
+   font-family: 'Roboto', sans-serif;
+}
+
+video {
+   width: 405px;
+   height: 251px;
+   overflow: hidden;
+   object-fit: cover;
+   border-radius: 5%;
+   position: absolute;
+
+}
+
+.information {
+   color: #AAEF71;
+   font-family: 'Roboto', sans-serif;
+   display: flex;
+   width: 404px;
+
+}
+
+.price {
+   margin-left: auto;
+   font-size: 19px;
+   margin-top: 13px;
+}
+
+.allcard {
+   width: 1745px;
+   margin: auto;
+
+}
+.bienvenue {
+   color: #AAEF71; 
+   font-size: 18px;
+   font-family: 'Paytone One', sans-serif;
+   padding-top:1px;
+   margin-left: auto;
+   margin-right: 10px;
+}
+.fa-user-check {
+   margin-left: 10px;
+}
+
+/***************************************************************FORMULAIRE******************************************************************************/
+
+
+.inputGroup {
+   font-family: 'Segoe UI', sans-serif;
+   margin: 1em 0 1em 0;
+   max-width: 500px;
+   position: relative;
+   margin: auto;
+}
+
+.inputGroup input {
+   font-size: 100%;
+   padding: 0.8em;
+   outline: none;
+   border: 2px solid white;
+   background-color: transparent;
+   border-radius: 20px;
+   width: 100%;
+
+}
+
+.inputGroup label {
+   font-size: 100%;
+   position: absolute;
+   left: 0;
+   padding: 0.8em;
+   margin-left: 0.5em;
+   pointer-events: none;
+   transition: all 0.3s ease;
+   color: #AAEF71;
+}
+
+.inputGroup :is(input:focus, input:valid)~label {
+   transform: translateY(-50%) scale(.9);
+   margin: 0em;
+   margin-left: 1.3em;
+   padding: 0.4em;
+   background-color: #1f1f1f;
+}
+
+.inputGroup :is(input:focus, input:valid) {
+   border-color: #AAEF71;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+   display: none;
+}
+
+input,
+select,
+textarea {
+   color: #AAEF71;
+}
+
+form button {
+   font-family: monospace;
+   font-size: 1.5rem;
+   color: #AAEF71;
+   text-transform: uppercase;
+   padding: 8px 20px;
+   border-radius: 20px;
+   border: 2px solid #FAFAFA;
+   background: #252525;
+   margin-left: 87%;
+   cursor: pointer;
+   position: absolute;
+
+}
+
+/* **********************************************************************BUTTON CONNEXION********************************************************************************* */
+
+.connexion {
+ appearance: none;
+ background-color: #1f1f1f;
+ border: 0.125em solid #AAEF71;
+
+ border-radius: 0.9375em;
+ box-sizing: border-box;
+ color: #AAEF71;
+ cursor: pointer;
+ 
+ font-weight: 600;
+ font-size: 14px;
+ margin-top: 4px;
+
+ min-height: 3.75em;
+ min-width: 0;
+
+ padding: 1em 2.3em;
+ text-align: center;
+ text-decoration: none;
+}
+
+.connexion:disabled {
+ pointer-events: none;
+}
+
+.connexion:hover {
+ color: #1f1f1f;
+ background-color: #AAEF71;
+ box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+
+}
+
+.connexion:active {
+ box-shadow: none;
+ transform: translateY(0);
+}
+
+.fa-user {
+   margin-left: -7px;
+   padding-right: 5px;
+}
+/* **********************************************************************BUTTON DECONNEXION********************************************************************************* */
+
+.deconnexion {
+ appearance: none;
+ background-color: #1f1f1f;
+ border: 0.125em solid #AAEF71;
+ border-radius: 0.9375em;
+ box-sizing: border-box;
+ color: #AAEF71;
+ cursor: pointer;
+ font-weight: 600;
+ font-size: 14px;
+ margin-top: 4px;
+ margin-right: 20px;
+ min-height: 3.75em;
+ min-width: 0;
+ padding: 1em 2.3em;
+ text-align: center;
+ text-decoration: none;
+}
+
+.deconnexion:disabled {
+ pointer-events: none;
+}
+
+.deconnexion:hover {
+ color: #1f1f1f;
+ background-color: #AAEF71;
+ box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+
+}
+
+.deconnexion:active {
+ box-shadow: none;
+ transform: translateY(0);
+}
+
+.fa-circle-minus {
+   margin-left: -7px;
+   padding-right: 5px;
+}
+
+
+
+/* **********************************************************************BUTTON INSCRIPTION********************************************************************************* */
+
+.inscription {
+ appearance: none;
+ background-color: #1f1f1f;
+ border: 0.125em solid #AAEF71;
+ border-radius: 0.9375em;
+ box-sizing: border-box;
+ color: #AAEF71;
+ cursor: pointer;
+ margin-left: 5px;
+ font-weight: 600;
+ font-size: 14px;
+ margin-top: 4px;
+ position: absolute;
+ min-height: 3.75em;
+ min-width: 0;
+
+ padding: 1em 2.3em;
+ text-align: center;
+ text-decoration: none;
+}
+
+.inscription:disabled {
+ pointer-events: none;
+}
+
+.inscription:hover {
+ color: #1f1f1f;
+ background-color: #AAEF71;
+ box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+
+}
+
+.inscription:active {
+ box-shadow: none;
+ transform: translateY(0);
+}
+
+.fa-scroll{
+    margin-left: -7px; 
+    padding-right: 5px;
+}
+
+.allbutton {
+ margin-left: auto;
+ margin-right: 200px;
+}
+
+
+
+
+
+
+/**********************************************************************RESPONSIVE*******************************************************************************/
+
+
+
+@media only screen and (max-width: 1755px) {
+   .allcard {
+      width: 1307px;
+   }
+
+}
+
+@media only screen and (max-width: 1320px) {
+   .allcard {
+      width: 870px;
+
+   }
+}
+
+@media only screen and (max-width: 888px) {
+
+   .allcard {
+      width: 405px;
+
+   }
+
+   .cardparent {
+      width: 405px;
+      margin-right: 0;
+      margin-left: 0;
+
+
+   }
+
+    form button {
+      font-family: monospace;
+      font-size: 1.5rem;
+      color: #AAEF71;
+      text-transform: uppercase;
+      padding: 8px 20px;
+      border-radius: 20px;
+      border: 2px solid #FAFAFA;
+      background: #252525;
+      margin-left: 86.4%;
+      cursor: pointer;
+      position: absolute;
+   }
+   .fa-bars{
+      color: #AAEF71;
+      position: absolute;
+      margin-top: 11px;
+      margin-left: 110px;
+      font-size: 30px;
+      
+    }
+    .allbutton {
+      margin-left: auto;
+      margin-right: 148px;
+      height: 500px;
+      width: 0px;
+     }
+     .connexion {
+  
+      margin-top: 54px;
+      display: none;
+      
+     }
+     .connexion.visible {
+  
+      margin-top: 54px;
+      display: block;
+      
+     }
+     .inscription{
+      margin-left: -1px;
+      display: none;
+     }
+     .inscription.visible{
+      margin-left: -1px;
+      display: block;
+     }
+    
+     .fa-scroll{
+      margin-left: -7px;
+      display: block;
+  }
+
+
+
+
+}
+
+@media only screen and (max-width: 543px) {
+   h2 {
+      color: #AAEF71;
+      text-shadow: 4px 0px #60d394;
+      font-size: 65px;
+      text-align: center;
+      font-family: 'Paytone One', sans-serif;
+      letter-spacing: 2px;
+      margin: 0;
+      padding-top: 120px;
+   }
+
+   .inputGroup {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 1em 0 1em 0;
+      max-width: 350px;
+      position: relative;
+      margin: auto;
+   }
+   .bienvenue {
+      display: none;
+     }
+
+     .deconnexion {
+      margin-left: auto;
+     }
+
+}
+
+
+@media only screen and (max-width: 442px) {
+   .allcard {
+      width: 350px;
+
+
+
+   }
+
+
+   .cardparent {
+      width: 350px;
+      margin-right: 0;
+      margin-left: 0;
+
+
+   }
+
+
+
+   img {
+      width: 350px;
+      height: 251px;
+      z-index: 1;
+      border-radius: 5%;
+      position: absolute;
+
+   }
+
+   video {
+      width: 350px;
+      height: 251px;
+      overflow: hidden;
+      object-fit: cover;
+      border-radius: 5%;
+      position: absolute;
+
+   }
+
+   .card {
+      width: 320px;
+      height: 251px;
+
+
+   }
+
+   h2 {
+      color: #AAEF71;
+      text-shadow: 4px 0px #60d394;
+      font-size: 55px;
+      text-align: center;
+      font-family: 'Paytone One', sans-serif;
+      letter-spacing: 2px;
+      margin: 0;
+      padding-top: 120px;
+   }
+
+   form button {
+      font-family: monospace;
+      font-size: 1.5rem;
+      color: #AAEF71;
+      text-transform: uppercase;
+      padding: 8px 20px;
+      border-radius: 20px;
+      border: 2px solid #FAFAFA;
+      background: #252525;
+      margin-left: 80.4%;
+      cursor: pointer;
+      position: absolute;
+   }
+
+   .information {
+      color: #AAEF71;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      width: 350px;
+
+   }
+
+   .promo {
+      background-color: #1f1f1f;
+      width: 40px;
+      height: 25px;
+      margin-left: 300px;
+      margin-top: 10px;
+      border-radius: 25%;
+      position: absolute;
+      z-index: 2;
+   }
+
+   
+}
+
+
+
